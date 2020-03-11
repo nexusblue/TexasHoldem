@@ -30,3 +30,16 @@ void Player::setHand(std::vector <std::string> hand) {
 	pHand = hand;
 
 }
+
+void Player::Fold() {
+	std::cout << "Inside Fold" << std::endl;
+}
+void Player::Raise() {
+
+}
+void Player::Pass() {
+
+}
+void Player::Call() {
+
+}

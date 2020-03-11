@@ -10,3 +10,6 @@ void ShowDeck( std::vector <std::string>& Deck );
 
 void ShuffleDeck( std::vector <std::string>& Deck );
 
+void ResetCards(std::vector<std::string>& Deck);
+
+int GetPlayerNum();

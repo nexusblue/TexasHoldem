@@ -28,18 +28,23 @@ public:
 	void setPlayNum(int);
 	void setHand(std::vector <std::string>);
 
+	void Fold();
+	void Raise();
+	void Pass();
+	void Call();
 
 	std::vector <std::string> pHand ;
+	std::vector <std::string> pBoardHand;
+
 	int playerNum;
-	//void DealHand();
+	bool inCurRound = true;
+	bool stillPlaying = true;
+	int Money = 100;
+	float cardPower = 0;
+
+
 
 };
-
-//void Player::DealHand() {
-	//this->pDeck = pDeck;
-	//this->hand[0] = pDeck[playerNum - 1];
-	//this->hand[1] = pDeck[playerNum];
-//}
 
 
 #endif // !PLAYER_H
